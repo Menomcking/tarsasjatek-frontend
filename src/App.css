@@ -39,18 +39,17 @@
 #reg{
   text-align: center;
 }
-ul {
-  background: #3399ff;
-  padding: 20px;
-  margin-right: 1450px;
-}
-li {
-  border-top: 3px black solid;
-  border-right: 3px black solid;
-  border-left: 3px black solid;
-  border-bottom: 3px black solid; ;
+td {
+  border-top: 3px cyan solid;
+  border-right: 3px cyan solid;
+  border-left: 3px cyan solid;
+  border-bottom: 3px cyan solid; ;
 }
 body{
   background-image: url('https://cdn.thewirecutter.com/wp-content/media/2020/10/smallworldboardgames-2048px-33.jpg?auto=webp&quality=75&width=1024&dpr=2');
   color: yellow;
+}
+table{
+  margin: 0 auto;  
+  border-collapse: collapse;
 }

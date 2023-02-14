@@ -66,17 +66,17 @@ class App extends Component <{}, State>{
   render() {
     const { tarsasjatekNev, tarsasjatekKiadasiDatum} = this.state;
 
-    return <div>
-      <div id='reg'>
-      <h2>Új Társasjáték</h2>
+    return <div id='reg'>
+      <div>
+      <h1>Új Társasjáték</h1>
       <p>Társasjáték neve: <input type="text" value={tarsasjatekNev} onChange={e => this.setState({tarsasjatekNev: e.currentTarget.value})}></input></p>
       <p>Társasjáték kiadási dátuma: <input type="date" value={tarsasjatekKiadasiDatum} onChange={e => this.setState({tarsasjatekKiadasiDatum: e.currentTarget.value})}></input></p>
       <p><button onClick={this.handleFill}>Adatfelvétel</button></p>
       </div>
-      <h2>Társasjátékok:</h2>
-      <ul>
-      {this.state.tarsasjatekok.map(tarsasjatek =>  <li>{tarsasjatek.nev} <button onClick={() => this.handleDelete(tarsasjatek.id)}>Törlés</button></li>)}
-      </ul>
+      <table>
+        <tr><h2>Társasjátékok:</h2></tr>
+      {this.state.tarsasjatekok.map(tarsasjatek =>  <tr><td>{tarsasjatek.nev}</td><td><button onClick={() => this.handleDelete(tarsasjatek.id)}>Törlés</button></td></tr>)}
+      </table>
     </div>
   }
 
