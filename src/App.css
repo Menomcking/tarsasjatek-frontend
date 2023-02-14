@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-header {  
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+#reg{
+  text-align: center;
+}
+ul {
+  background: #3399ff;
+  padding: 20px;
+  margin-right: 1450px;
+}
+li {
+  border-top: 3px black solid;
+  border-right: 3px black solid;
+  border-left: 3px black solid;
+  border-bottom: 3px black solid; ;
+}
+body{
+  background-image: url('https://cdn.thewirecutter.com/wp-content/media/2020/10/smallworldboardgames-2048px-33.jpg?auto=webp&quality=75&width=1024&dpr=2');
+  color: yellow;
 }
